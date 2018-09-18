@@ -1,6 +1,6 @@
 # Ansible-statuscake
 
-This ansible module setups a HTTP/TCP/PING test via [StatusCake](https://www.statuscake.com) API. 
+This ansible module setups/deletes a HTTP/TCP/PING test via [StatusCake](https://www.statuscake.com) API. 
 
 ## Requirements
 
@@ -22,6 +22,7 @@ Just copy the **library/status_cake_test.py** in your playbook folder
       status_cake_test:
         username:        "example_user"                       # StatusCake login name
         api_key:         "som3thing1se3cret"                  # StatusCake API key (cf: https://app.statuscake.com/APIKey.php)
+        state:           "present"                            # If present the task will try to create/update the test, if absent the task will delete the test
         name:            "{{ item.value.url }}"               # Website name
         url:             "{{ item.value.url }}"               # Test location, either an IP (for TCP and Ping) or a fully qualified URL
         test_tags:       "something,somethingelse,anotherone" # Tags should be seperated by a comma
@@ -43,6 +44,3 @@ Just copy the **library/status_cake_test.py** in your playbook folder
 ## TODO
 * Role for Ansible galaxy
 * Edge cases
-* Able to delete a test according to the name
-
-
