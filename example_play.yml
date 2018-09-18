@@ -5,10 +5,11 @@
   tasks:
     - name: Create status cake test
       status_cake_test: 
-        username: "example_user"
-        api_key: "som3thing1se3cret"
-        name: "{{ item.value.url }}"
-        url: "{{ item.value.url }}"
+        username:  "example_user"
+        api_key:   "som3thing1se3cret"
+        state:     "present"
+        name:      "{{ item.value.url }}"
+        url:       "{{ item.value.url }}"
         test_tags: "something"
         test_type: "HTTP"
         check_rate: 300
