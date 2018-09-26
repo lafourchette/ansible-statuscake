@@ -75,7 +75,7 @@ def main():
         "trigger_rate": {"required": False, "type": "str"},
         "check_rate": {"required": False, "default": 300, "type": "int"},
         "test_type": {"required": False, "choices": ['HTTP', 'TCP', 'PING'],"type": "str"},
-        "contact": {"required": False, "type": "int"},
+        "contact": {"required": False, "type": "str"},
         "port": {"required": False, "type": "int"},
         "user_agent": {"required": False, "default":"StatusCake Agent", "type": "str"},
         "final_location": {"required": False, "type": "str"},
