@@ -74,7 +74,7 @@ def main():
         "follow_redirect": {"required": False, "type": "str"},
         "trigger_rate": {"required": False, "type": "str"},
         "check_rate": {"required": False, "default": 300, "type": "int"},
-        "test_type": {"required": False, "choices": ['HTTP', 'TCP', 'PING'],"type": "str"},
+        "test_type": {"required": False, "choices": ['HTTP', 'HEAD', 'TCP', 'DNS', 'SMTP', 'SSH', 'PING', 'PUSH'],"type": "str"},
         "contact": {"required": False, "type": "str"},
         "port": {"required": False, "type": "int"},
         "user_agent": {"required": False, "default":"StatusCake Agent", "type": "str"},
