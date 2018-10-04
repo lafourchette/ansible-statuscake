@@ -194,7 +194,7 @@ def main():
     subject_line = module.params['subject_line']
     sender_address = module.params['sender_address']
 
-    test_object = StatusCake(module, username, api_key, name, url, state, test_tags, check_rate, test_type, contact_group, port, user_agent, status_codes, node_locations, follow_redirect, trigger_rate, final_endpoint, find_stringi, paused, timeout, use_jar, website_host, post_body, post_raw, custom_header, site_ip, dns_ip, dns_server, basic_user, basic_pass, include_header, do_not_find, confirmation, enable_ssl_warning, full_test, custom_message, subject_line, sender_address)
+    test_object = StatusCake(module, username, api_key, name, url, state, test_tags, check_rate, test_type, contact_group, port, user_agent, status_codes, node_locations, follow_redirect, trigger_rate, final_endpoint, find_string, paused, timeout, use_jar, website_host, post_body, post_raw, custom_header, site_ip, dns_ip, dns_server, basic_user, basic_pass, include_header, do_not_find, confirmation, enable_ssl_warning, full_test, custom_message, subject_line, sender_address)
     test_object.manage_test()
 
 if __name__ == '__main__':  
