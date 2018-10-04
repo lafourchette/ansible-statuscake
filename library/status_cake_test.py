@@ -119,7 +119,7 @@ def main():
         "api_key": {"required": True, "type": "str"},
         "name": {"required": True, "type": "str"},
         "url": {"required": True, "type": "str"},
-        "state": {"required": True, "choices": ['present', 'absent'], "default":"present", "type": "str"},
+        "state": {"required": True, "choices": ['present', 'absent'], "type": "str"},
         "test_tags": {"required": False, "type": "str"},
         "status_codes": {"required": False, "type": "str"},
         "node_locations": {"required": False, "type": "str"},
